@@ -112,10 +112,10 @@ public OnPluginStart()
 	hCvarAllowThrow = CreateConVar("am_items_bonus_allow_throw", "0", "Are we allow thrown as the part of scoring");
 	hCvarThrowBonusFactor = CreateConVar("am_items_throw_bonus_factor", "0.0", "Unused Throwable can gain this * Map Distance", FCVAR_NONE, true, 0.0, true, 1000.0);
 	hCvarPermTotal = CreateConVar("am_perm_total", "400", "We consider the max of the survivor team's perm health", FCVAR_NONE, true, 1.0, true, 10000.0);
-	hCvarTempTotal = CreateConVar("am_temp_total", "200", "We consider the max of the survivor team's temp health", FCVAR_NONE, true, 1.0, true, 10000.0);
+	hCvarTempTotal = CreateConVar("am_temp_total", "240", "We consider the max of the survivor team's temp health", FCVAR_NONE, true, 1.0, true, 10000.0);
 	hCvarAllowTempExtraBonus = CreateConVar("am_bonus_allow_temp_extra", "0", "Are we allow the extrabonus for entering saferoom without any temphealth lost");
 	hCvarTempExtraBonusFactor = CreateConVar("am_temp_extra_bonus_factor", "0.0", "The extra bonus will be this * Map Distance", FCVAR_NONE, true, 0.0, true, 1000.0);
-	hCvarIncapPenalty = CreateConVar("am_incap_penalty", "10", "When someone is incapped, we reduce the tempbonus", FCVAR_NONE, true, 1.0, true, 1000.0);
+	hCvarIncapPenalty = CreateConVar("am_incap_penalty", "12", "When someone is incapped, we reduce the tempbonus", FCVAR_NONE, true, 1.0, true, 1000.0);
 	hCvarAllowMix = CreateConVar("am_health_damage_mix", "1", "Are we allow two pools mix together");
 	hCvarPermToTemp = CreateConVar("am_health_damage_ptt", "1.0", "1 Perm Damage times this value to thansfer TotalMix Penalty (Mix set to 1)", FCVAR_NONE, true, 0.0);
 	hCvarTempToPerm = CreateConVar("am_health_damage_ttp", "1.0", "1 Temp Damage times this value to thansfer TotalMix Penalty (Mix set to 1)", FCVAR_NONE, true, 0.0);
